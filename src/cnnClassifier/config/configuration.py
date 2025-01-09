@@ -84,7 +84,7 @@ class ConfigurationManager:
 
     def get_evaluation_config(self) -> EvaluationConfig:
         eval_config = EvaluationConfig(
-            path_of_model="artifacts/training/model.h5",
+            path_of_model="artifacts/training/model.h5",   #this file is hidden ,hence we added this file in models folder
             training_data="artifacts/data_ingestion/kidney-ct-scan-image",
             mlflow_uri="https://dagshub.com/prathamesh.khade20/CVops_kideney_disease_classification.mlflow",
             all_params=self.params,
